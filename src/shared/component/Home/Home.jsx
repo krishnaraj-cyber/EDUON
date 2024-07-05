@@ -22,11 +22,11 @@ export default function Home() {
             </div>
           </div>
           <div class="frame1-img">
-            <img src="src\assets\Images/22222.png" />
+            <img src="images/22222.png" />
           </div>
-          <img src="src\assets\Images/x-design.png" alt="" id="x-design" />
-          <img src="src\assets\Images/round-design.png" alt="" id="round-design" />
-          <img src="src\assets\Images/doubled-circles.png" alt="" id="doubled-circles" />
+          <img src="images/x-design.png" alt="" id="x-design" />
+          <img src="images/round-design.png" alt="" id="round-design" />
+          <img src="images/doubled-circles.png" alt="" id="doubled-circles" />
         </div>
       </div>
 
@@ -38,28 +38,28 @@ export default function Home() {
           <h2 class="mtit">Your Benifit with Eduon</h2>
           <img
             class="mstit-underline"
-            src="src\assets\Images/mstit-underline.png"
+            src="images/mstit-underline.png"
             alt=""
           />
         </div>
         <div class="alllogo">
           <div>
-            <img class="logo1" src="src\assets\Images/watchlogo.png" />
+            <img class="logo1" src="images/watchlogo.png" />
             <p>Save time & money</p>
           </div>
 
           <div>
-            <img class="logo1" src="src\assets\Images/scalelogo.png" />
+            <img class="logo1" src="images/scalelogo.png" />
             <p>Balance learning with life</p>
           </div>
 
           <div>
-            <img class="logo1" src="src\assets\Images/booklogo.png" />
+            <img class="logo1" src="images/booklogo.png" />
             <p>Gain valuable knowledge</p>
           </div>
 
           <div class="logo12">
-            <img src="src\assets\Images/,aplogo.png" />
+            <img src="images/,aplogo.png" />
             <p  id="link-courses">Gain valuable knowledge</p>
           </div>
         </div>
@@ -74,14 +74,14 @@ export default function Home() {
           <h2 class="mtit">Popular Online Courses</h2>
           <img
             class="mstit-underline"
-            src="src\assets\Images/mstit-underline.png"
+            src="images/mstit-underline.png"
             alt=""
           />
         </div>
 
         <div class="f3container">
           <div class="f3tables">
-            <img class="imagerow31" src="src\assets\Images/online course 1.jpg" />
+            <img class="imagerow31" src="images/online course 1.jpg" />
             <p class="f3tablesyellowtext">Education</p>
             <p class="f3tablespbiggertext">
               Programming foundations: real- world examples
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
           <div class="f3tables">
-            <img class="imagerow31" src="src\assets\Images/online course 3.jfif" />
+            <img class="imagerow31" src="images/online course 3.jfif" />
             <p class="f3tablesyellowtext">School</p>
             <p class="f3tablespbiggertext">
               Teaching assistant certificate in learning in schools
@@ -106,7 +106,7 @@ export default function Home() {
             <img
               class="imagerow31"
               id="f3-table-pic3"
-              src="src\assets\Images/online course 2.jpg"
+              src="images/online course 2.jpg"
             />
             <p class="f3tablesyellowtext">Language</p>
             <p class="f3tablespbiggertext">
@@ -134,7 +134,7 @@ export default function Home() {
             <h2 class="mtit">Top Categories</h2>
             <img
               class="mstit-underline"
-              src="src\assets\Images/mstit-underline.png"
+              src="images/mstit-underline.png"
               alt=""
             />
           </div>
@@ -191,7 +191,7 @@ export default function Home() {
             <div class="yellowpt">
               <div>
                 <img
-                  src="src\assets\Images/yelicon1.png"
+                  src="images/yelicon1.png"
                   width="50px"
                   height="fit-content"
                 />
@@ -207,7 +207,7 @@ export default function Home() {
             <div class="yellowpt">
               <div>
                 <img
-                  src="src\assets\Images/yelicon2.png"
+                  src="images/yelicon2.png"
                   width="50px"
                   height="fit-content"
                 />
@@ -223,7 +223,7 @@ export default function Home() {
             <div class="yellowpt">
               <div>
                 <img
-                  src="src\assets\Images/yelicon3.png"
+                  src="images/yelicon3.png"
                   width="50px"
                   height="fit-content"
                 />
@@ -244,13 +244,13 @@ export default function Home() {
               <h2 class="mtit">What Students Say</h2>
               <img
                 class="mstit-underline"
-                src="src\assets\Images/mstit-underline.png"
+                src="images/mstit-underline.png"
                 alt=""
               />
             </div>
             <img
               style={{paddingBottom: '30px' , height:'90px', margin:'0 auto'}}
-              src="src\assets\Images/icons8-get-quote-24.png"
+              src="images/icons8-get-quote-24.png"
               alt=""
               
             />
@@ -264,7 +264,7 @@ export default function Home() {
 
             <div class="logojess">
               <div>
-                <img id="logojess" src="src\assets\Images/handfoldgirl.jpg" />
+                <img id="logojess" src="images/handfoldgirl.jpg" />
               </div>
               <div>
                 <p style={{fontWeight:'600'}} >
@@ -275,12 +275,12 @@ export default function Home() {
                 </p>
               </div>
               <img
-                src="src\assets\Images/left-design-fr4.png"
+                src="images/left-design-fr4.png"
                 alt=""
                 id="left-design-fr4"
               />
               <img
-                src="src\assets\Images/right-design-fr4.png"
+                src="images/right-design-fr4.png"
                 alt=""
                 id="right-design-fr4"
               />
@@ -309,7 +309,7 @@ export default function Home() {
             <h2 class="mtitframe5">Upcoming Events</h2>
             <img
               class="mstit-underlinefr5"
-              src="src\assets\Images/mstit-underline.png"
+              src="images/mstit-underline.png"
               alt=""
             />
           </div>
@@ -318,17 +318,17 @@ export default function Home() {
             <div class="frame500">
               <div class="frame5box">
                 <div>
-                  <img class="s501" src="src\assets\Images/Ellipse-66.png" />
+                  <img class="s501" src="images/Ellipse-66.png" />
                 </div>
 
                 <div class="frame5cont">
                   <div class="fr5datetime">
                     <span>
-                      <img src="src\assets\Images/icons8-calendar-50.png" />
+                      <img src="images/icons8-calendar-50.png" />
                     </span>
                     <span class="frame5cont555">Aug 13 2020</span>
                     <span>
-                      <img src="src\assets\Images/icons8-time-50.png" />
+                      <img src="images/icons8-time-50.png" />
                     </span>
                     <span class="frame5cont556">Monday 3:00AM-5:00PM</span>
                   </div>
@@ -340,7 +340,7 @@ export default function Home() {
                   </h4>
                   <div class="fr5location">
                     <span>
-                      <img src="src\assets\Images/icons8-location-50.png" />
+                      <img src="images/icons8-location-50.png" />
                     </span>
                     <span class="frame5cont666">Washington DC</span>
                   </div>
@@ -349,17 +349,17 @@ export default function Home() {
 
               <div class="frame5box">
                 <div>
-                  <img class="s501" src="src\assets\Images/Ellipse-67.png" />
+                  <img class="s501" src="images/Ellipse-67.png" />
                 </div>
 
                 <div class="frame5cont">
                   <div class="fr5datetime">
                     <span>
-                      <img src="src\assets\Images/icons8-calendar-50.png" />
+                      <img src="images/icons8-calendar-50.png" />
                     </span>
                     <span class="frame5cont555">Sep 14 2020</span>
                     <span>
-                      <img src="src\assets\Images/icons8-time-50.png" />
+                      <img src="images/icons8-time-50.png" />
                     </span>
                     <span class="frame5cont556">Monday 3:00AM-5:00PM</span>
                   </div>
@@ -371,7 +371,7 @@ export default function Home() {
                   </h4>
                   <div class="fr5location">
                     <span>
-                      <img src="src\assets\Images/icons8-location-50.png" />
+                      <img src="images/icons8-location-50.png" />
                     </span>
                     <span class="frame5cont666">New Orleens, LA</span>
                   </div>
@@ -380,17 +380,17 @@ export default function Home() {
 
               <div class="frame5box">
                 <div>
-                  <img class="s501" src="src\assets\Images/Ellipse-68.png" />
+                  <img class="s501" src="images/Ellipse-68.png" />
                 </div>
 
                 <div class="frame5cont">
                   <div class="fr5datetime">
                     <span>
-                      <img src="src\assets\Images/icons8-calendar-50.png" />
+                      <img src="images/icons8-calendar-50.png" />
                     </span>
                     <span class="frame5cont555">Oct 01 2020</span>
                     <span>
-                      <img src="src\assets\Images/icons8-time-50.png" />
+                      <img src="images/icons8-time-50.png" />
                     </span>
                     <span class="frame5cont556">Monday 3:00AM-5:00PM</span>
                   </div>
@@ -401,7 +401,7 @@ export default function Home() {
                   </h4>
                   <div class="fr5location">
                     <span>
-                      <img src="src\assets\Images/icons8-location-50.png" />
+                      <img src="images/icons8-location-50.png" />
                     </span>
                     <span class="frame5cont666">Ballavu a WA </span>
                   </div>
@@ -409,7 +409,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <img class="frame5img2" src="src\assets\Images/wowww.png" />
+              <img class="frame5img2" src="images/wowww.png" />
             </div>
           </div>
         </div>
@@ -426,28 +426,28 @@ export default function Home() {
           <h2 class="mtit">Our International Teachers</h2>
           <img
             class="mstit-underline"
-            src="src\assets\Images/mstit-underline.png"
+            src="images/mstit-underline.png"
             alt=""
           />
         </div>
         <div class="framebox">
           <div class="box">
-            <img class="boxxx" src="src\assets\Images/box1.png" />
+            <img class="boxxx" src="images/box1.png" />
             <h2>Earl McGowan</h2>
             <p>IT & Software</p>
           </div>
           <div class="box">
-            <img class="boxxx" src="src\assets\Images/box2.png" />
+            <img class="boxxx" src="images/box2.png" />
             <h2>Chris Miller</h2>
             <p>Mathematic</p>
           </div>
           <div class="box">
-            <img class="boxxx" src="src\assets\Images/box3.png" />
+            <img class="boxxx" src="images/box3.png" />
             <h2>Mark Dent</h2>
             <p>Programmer</p>
           </div>
           <div class="box">
-            <img class="boxxx1" src="src\assets\Images/box4.png" />
+            <img class="boxxx1" src="images/box4.png" />
             <h2>Lena Bodie</h2>
             <p>English</p>
           </div>
@@ -458,19 +458,19 @@ export default function Home() {
         <div>
           <div class="ecclipses">
             <div>
-              <img src="src\assets\Images/ecclipse3.png" />
+              <img src="images/ecclipse3.png" />
               <p>Sucess Rate</p>
             </div>
             <div>
-              <img src="src\assets\Images/ecclipse2.png" />
+              <img src="images/ecclipse2.png" />
               <p>Student Enrolled</p>
             </div>
             <div>
-              <img src="src\assets\Images/ecclipse1.png" />
+              <img src="images/ecclipse1.png" />
               <p>Certifies Teachers</p>
             </div>
             <div>
-              <img src="src\assets\Images/ecclipse.png" />
+              <img src="images/ecclipse.png" />
               <p>Complete Courses</p>
             </div>
           </div>
@@ -486,13 +486,13 @@ export default function Home() {
           <h2 class="mtit">Explore Recent News</h2>
           <img
             class="mstit-underline"
-            src="src\assets\Images/mstit-underline.png"
+            src="images/mstit-underline.png"
             alt=""
           />
         </div>
         <div class="frame7container">
           <div class="picfr7">
-            <img src="src\assets\Images/1.jpg" />
+            <img src="images/1.jpg" />
             <p>Career Advice</p>
             <h3>
               Leading the way with lifelong
@@ -505,7 +505,7 @@ export default function Home() {
             </span>
           </div>
           <div class="picfr7">
-            <img src="src\assets\Images/2.jpg" />
+            <img src="images/2.jpg" />
             <p>Market Trends</p>
             <h3>
               All aspire students are now
@@ -518,7 +518,7 @@ export default function Home() {
             </span>
           </div>
           <div class="picfr7">
-            <img src="src\assets\Images/3.jpg" />
+            <img src="images/3.jpg" />
             <p>Research </p>
             <h3>
               Determining the true goal of a <br />
@@ -538,27 +538,27 @@ export default function Home() {
 
       <div class="frame8">
         <div>
-          <img src="src\assets\Images/fr81.png" />
+          <img src="images/fr81.png" />
           <h2>KAYEDUC</h2>
         </div>
         <div>
-          <img src="src\assets\Images/fr82.png" />
+          <img src="images/fr82.png" />
           <h2>AMEDUCA</h2>
         </div>
         <div>
-          <img src="src\assets\Images/fr83.png" />
+          <img src="images/fr83.png" />
           <h2>VERTEDUC</h2>
         </div>
         <div>
-          <img src="src\assets\Images/fr84.png" />
+          <img src="images/fr84.png" />
           <h2>EDUCATRI</h2>
         </div>
         <div>
-          <img src="src\assets\Images/fr85.png" />
+          <img src="images/fr85.png" />
           <h2>SUREDUC</h2>
         </div>
         <div>
-          <img src="src\assets\Images/fr81.png" />
+          <img src="images/fr81.png" />
           <h2>KAYEDUC</h2>
         </div>
       </div>

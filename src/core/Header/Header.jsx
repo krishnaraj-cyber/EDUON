@@ -28,8 +28,8 @@ export default function Header () {
 
                 </div>
                 <div class="search-cart-button showmenu hide">
-                        <div><a href=""><img src="src\assets\Images\icons8-search-24.png" alt=""/></a></div>
-                        <div><a href=""><img src="src\assets\Images\/icons8-cart-24.png"/></a></div>
+                        <div><a href=""><img src="images/icons8-search-24.png" alt=""/></a></div>
+                        <div><a href=""><img src="images/icons8-cart-24.png"/></a></div>
                         <div><Link to="/login_page"><button class="login--button">Login/Register</button></Link></div>
                 </div>
 

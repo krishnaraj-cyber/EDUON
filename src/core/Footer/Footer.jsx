@@ -14,15 +14,15 @@ export default function Footer () {
 
         <div class="disclaimercontent">
                 <h2>Find Us</h2>
-                <div><img src="src/assets/Images/icons8-location-20.png"/>
+                <div><img src="images/icons8-location-20.png"/>
                         <p>6890 Blvd, The Bronx, NY 1058<br/>
                                 New York, USA</p>
                 </div>
-                <div><img src="src/assets/Images/icons8-mail-20.png"/>
+                <div><img src="images/icons8-mail-20.png"/>
                         <p>hello@eduon.com<br/>
                                 public@eduon.com</p>
                 </div>
-                <div><img src="src/assets/Images/icons8-contact-20.png"/>
+                <div><img src="images/icons8-contact-20.png"/>
                         <p>+(514) 312-5678<br/>
                                 +1(514) 312-6688</p>
                 </div>
