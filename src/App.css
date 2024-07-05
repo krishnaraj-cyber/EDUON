@@ -590,42 +590,42 @@ html {
   
   .frame4image1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/design.jpg);
+      url(images/design.jpg);
   }
   
   .frame4image2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/development.jpg);
+      url(images/development.jpg);
   }
   
   .frame4image3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/business.jpg);
+      url(images/business.jpg);
   }
   
   .frame4image4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/marketing.jpg);
+      url(images/marketing.jpg);
   }
   
   .frame4image5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/it&software.jpg);
+      url(images/it&software.jpg);
   }
   
   .frame4image6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/datascience.jpg);
+      url(images/datascience.jpg);
   }
   
   .frame4image7 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/photography.jpg);
+      url(images/photography.jpg);
   }
   
   .frame4image8 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(src/assets/Images/music.jpg);
+      url(images/music.jpg);
   }
   
   
@@ -912,7 +912,7 @@ html {
     transform: translateX(-573px);
   }
   .untitled1-bg{
-    background-image: url(src/assets/Images/Untitled-1-bg.png);
+    background-image: url(images/Untitled-1-bg.png);
     height:fit-content;
     background-repeat: no-repeat;
     background-position:top;
@@ -1262,7 +1262,7 @@ html {
   
     .frame1 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(src/assets/Images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg);
+      url(images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg);
       background-position: center;
       background-size: cover;
       color: white;
@@ -1271,15 +1271,15 @@ html {
   @keyframes frame1-animation{
     25%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(src/assets/Images/development.jpg);;
+      url(images/development.jpg);;
     }
     50%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(src/assets/Images/business.jpg);;
+      url(images/business.jpg);;
     }
     75%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(src/assets/Images/it&software.jpg);;
+      url(images/it&software.jpg);;
     }
   }
 
