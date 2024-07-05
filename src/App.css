@@ -912,7 +912,7 @@ html {
     transform: translateX(-573px);
   }
   .untitled1-bg{
-    background-image: url(images/Untitled-1-bg.png);
+    background-image: url('https://eduon-beta.vercel.app/images/Untitled-1-bg.png');
     height:fit-content;
     background-repeat: no-repeat;
     background-position:top;
@@ -1262,7 +1262,7 @@ html {
   
     .frame1 {
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg);
+      url('https://eduon-beta.vercel.app/images/everything-will-be-awesome-group-young-people-casual-clothes-working-modern-office.jpg');
       background-position: center;
       background-size: cover;
       color: white;
@@ -1271,15 +1271,15 @@ html {
   @keyframes frame1-animation{
     25%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(images/development.jpg);;
+      url('https://eduon-beta.vercel.app/images/development.jpg');;
     }
     50%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(images/business.jpg);;
+      url('https://eduon-beta.vercel.app/images/business.jpg');;
     }
     75%{
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-      url(images/it&software.jpg);;
+      url('https://eduon-beta.vercel.app/images/it&software.jpg');;
     }
   }
 
