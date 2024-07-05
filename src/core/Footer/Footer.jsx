@@ -62,7 +62,7 @@ export default function Footer () {
 
 
 <div class="copyrights">
-        <img src="src/assets/Images/icons8-copyrights-24.png"/>
+        <img src="images/icons8-copyrights-24.png"/>
         <p> Eduon is Proudly Owned by <span>HiBootstrap</span></p>
 </div>
 
@@ -71,7 +71,7 @@ export default function Footer () {
 
 <a href="#link-home">
         <div id="topup-button">
-                <img src="src/assets/Images/icons8-chevron-24.png" alt="scroll up button"/>
+                <img src="images/icons8-chevron-24.png" alt="scroll up button"/>
         </div>
 </a>
 
