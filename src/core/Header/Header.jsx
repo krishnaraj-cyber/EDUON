@@ -13,7 +13,7 @@ export default function Header () {
           <>
                 <header>
                 <div class="logo">
-                        <a href="#link-home"><img class="eduonlogo" src="src\assets\Images\eduonlogo.png"/></a>
+                        <a href="#link-home"><img class="eduonlogo" src="/images\eduonlogo.png"/></a>
                 </div>
                 <div class="nav-items showmwnu hide">
                         <div><Link to="" >Home</Link></div>
