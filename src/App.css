@@ -600,32 +600,32 @@ html {
   
   .frame4image3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/business.jpg);
+      url('https://eduon-beta.vercel.app/images//business.jpg');
   }
   
   .frame4image4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/marketing.jpg);
+      url('https://eduon-beta.vercel.app/images/marketing.jpg');
   }
   
   .frame4image5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/it&software.jpg);
+      url('https://eduon-beta.vercel.app/images/it&software.jpg');
   }
   
   .frame4image6 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/datascience.jpg);
+      url('https://eduon-beta.vercel.app/images/datascience.jpg');
   }
   
   .frame4image7 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/photography.jpg);
+      url('https://eduon-beta.vercel.app/images/photography.jpg');
   }
   
   .frame4image8 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url(images/music.jpg);
+      url('https://eduon-beta.vercel.app/images/music.jpg');
   }
   
   
