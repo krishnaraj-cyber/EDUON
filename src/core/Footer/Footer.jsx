@@ -50,7 +50,7 @@ export default function Footer () {
                 <p>Computer science</p>
                 <p>Business and Management</p>
                 <p>Business and Management</p>
-                <p>nature & Environment</p>
+                <p>Nature & Environment</p>
         </div>
 
 </div>

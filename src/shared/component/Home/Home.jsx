@@ -1,4 +1,7 @@
 import "../../../../src/App.css";
+import { Link } from "react-router-dom";
+
+
 
 export default function Home() {
   return (
@@ -140,51 +143,81 @@ export default function Home() {
           </div>
 
           <div class="multiplebox4">
-            <div class="frame4image1">
+          <a href="https://www.youtube.com/watch?v=c9Wg6Cb_YlU"> 
+            <div class="frame4image1" > 
+              
               <p style={{fontSize: '25px'}}>Design</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 200+ courses</p>
+            
             </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=nu_pCVPKzTk" >
             <div class="frame4image2">
+              
               <p style={{fontSize: '25px'}}>Development</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 200 courses</p>
+              
             </div>
+            </a>
+            <a href="https://www.youtube.com/results?search_query=Business" >
             <div class="frame4image3">
+            
               <p style={{fontSize: "25px"}}>Business</p>
               <br />
               <p style={{fontWeight: "normal"}}>Over 150 courses</p>
+              
             </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=f3L7yFPMtBw" >
             <div class="frame4image4">
+            
               <p style={{fontSize: '25px'}}>Marketing</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 200+ courses</p>
+              
             </div>
-
+            </a>
+            <a href="https://www.youtube.com/watch?v=vPl_qqBdeeY&list=PLfqgOEAL4jgIunxUksOXd6LNxjEPN2MSi&index=2" >
             <div class="frame4image5">
+            
               <p style={{fontSize: '25px'}}>IT & Software</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 250 courses</p>
+              
             </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=-ETQ97mXXF0" >
             <div class="frame4image6">
+            
               <p style={{fontSize: '25px'}}>Data Science</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 50 courses</p>
             </div>
-            <div class="frame4image7">
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=yhAmMUi2NmM" >
+              <div class="frame4image7">
               <p style={{fontSize: '25px'}}>Photography</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 700 courses</p>
+              
             </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=6gHEIF0rT2w&list=PLB585CE43B02669C3" >
             <div class="frame4image8">
+            
               <p style={{fontSize: '25px'}}>Music</p>
               <br />
               <p style={{fontWeight: 'normal'}}>Over 150 courses</p>
+              
             </div>
+            </a>
           </div>
 
           <div class="allcatebutton">
-            <button>All Categories</button>
+            <Link to="/allcourse_categories"><button>All Categories</button></Link>
           </div>
 
           <div class="yellowrectangle">
