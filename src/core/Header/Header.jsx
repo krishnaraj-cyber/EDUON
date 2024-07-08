@@ -1,7 +1,7 @@
 import ContactPage from "../../components/HomePage/ContactPage";
 import { Link } from "react-router-dom";
 
-
+import React, { useState } from 'react';
 
 
 
@@ -9,20 +9,35 @@ import { Link } from "react-router-dom";
 
 export default function Header () {
 
+
+
+
+        const [menuOpen, setMenuOpen] = useState(false);
+
+        const toggleMenu = () => {
+          setMenuOpen(!menuOpen);
+        };
+      
+
+
+
     return(
           <>
                 <header>
                 <div class="logo">
                         <a href="#link-home"><img class="eduonlogo" src="/images/eduonlogo.png"/></a>
                 </div>
-                <div class="nav-items showmwnu hide">
+                 {/* <div class="nav-items showmwnu hide">  */}
+                 <div className={`nav-items ${menuOpen ? 'show' : 'hide'}`}>
+
+
                         <div><Link to="" >Home</Link></div>
                         <div><a href="#link-courses">Course</a></div>
                         <div><a href="#link-home">Pages</a></div>
                         <div><a href="#link-home">Shop</a></div>
                         <div><a href="">Blog</a></div>
                         <div><Link to="/contactpage-link" >Contact</Link></div>
-                        <div><Link to="/"><button class="mobile-login-button wwwwwwwwww">Login/Register</button></Link>
+                        <div><Link to="/login_page"><button class="mobile-login-button wwwwwwwwww">Login/Register</button></Link>
                         </div>
 
 
@@ -35,7 +50,7 @@ export default function Header () {
 
         </header>
         <div>
-                <button class="menu">
+                <button class="menu" onClick={toggleMenu}>
                         <div class="menuline"></div>
                         <div class="menuline"></div>
                         <div class="menuline"></div>

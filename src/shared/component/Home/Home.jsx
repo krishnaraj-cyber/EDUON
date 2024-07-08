@@ -217,7 +217,7 @@ export default function Home() {
           </div>
 
           <div class="allcatebutton">
-            <Link to="/allcourse_categories"><button>All Categories</button></Link>
+            <Link to=''><button>All Categories</button></Link>
           </div>
 
           <div class="yellowrectangle">
