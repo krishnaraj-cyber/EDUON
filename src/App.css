@@ -60,14 +60,24 @@ html {
     text-decoration: none;
     color: black;
     font-size: 11pt;
-  
+    padding: 6px 0;
   }
   
   header>.nav-items a:hover {
     color: #ffb607;
     text-decoration: underline 2px 2px;
     transition-duration: .2s;
+
+    border-bottom: 5px solid #ffb607;
+   
   }
+
+  header>.nav-items a:focus {
+    border-bottom: 5px solid #ffb607;
+    color:#ffb607;
+ }  header>.nav-items a:active {
+  border-bottom: 5px solid #000000;
+}
   
   
 .search-cart-button {
@@ -408,7 +418,6 @@ html {
   
   .logo12 {
     margin-bottom: 3vh;
-    animation: _logo12 .5s  ease-in-out;
   }
   @keyframes _logo12 {
     0%{translate: 500px -100px;}
