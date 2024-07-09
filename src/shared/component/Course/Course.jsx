@@ -27,7 +27,7 @@ function Course() {
   return (
     <>
 
-    <button style={{zIndex:'2',position:'fixed',top:'8%',right:'2%',height:'30px',width:'100px',backgroundColor:'#ffb607',borderRadius:'5px'}} onClick={logoutHandler}>LogOut</button>
+    {/* <button style={{zIndex:'2',position:'fixed',top:'8%',right:'2%',height:'30px',width:'100px',backgroundColor:'#ffb607',borderRadius:'5px'}} onClick={logoutHandler}>LogOut</button> */}
 
 <h1 class="Heading-toc">Categories</h1>
         <img
