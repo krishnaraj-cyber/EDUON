@@ -88,7 +88,7 @@ export default function Header() {
           <a href="#link-home"><img className="eduonlogo" src="/images/eduonlogo.png" alt="Logo" /></a>
         </div>
         <div className={`nav-items ${menuOpen ? 'show' : 'hide'}`}>
-          <div><Link to="/home-_link">Home</Link></div>
+          <div><Link to="/">Home</Link></div>
           <div><a href="#link-courses">Course</a></div>
           {/* <div><a href="#link-home">Pages</a></div>
           <div><a href="#link-home">Shop</a></div> */}

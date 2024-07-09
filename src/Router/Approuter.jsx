@@ -30,7 +30,7 @@ export default function Approuter () {
        <AuthProvider>
        <Routes>
         <Route element={<Main/>}>
-         <Route path="/home-_link" element={<Homepage/>}/>
+         <Route path="/" element={<Homepage/>}/>
          <Route path="/blog-_link" element={<BlogPage/>}/>
          <Route path="/contactpage-link" element={<ContactPage/>}/>
          <Route path="/login_page" element={<LoginPage/>}/>
