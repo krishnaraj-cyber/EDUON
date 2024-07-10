@@ -70,16 +70,50 @@
 
 
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../shared/component/AuthContext';
 
 export default function Header() {
   const { isAuthenticated, logout } = useContext(AuthContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // added - 10-7 cg
+  const navigate = useNavigate();
+   // added - 10-7 cg
+
+
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+
+
+  // added - 10-7 cg
+
+  const loginsucess = () => {
+    if (isAuthenticated) {
+      navigate('/');
+    } else {
+      navigate('/login_page');
+    }
+  };
+
+  
+  const handleCourseClick = () => {
+    if (isAuthenticated) {
+      navigate('/updated-course-link');
+    } else {
+      navigate('/login_page');
+    }
+  };
+
+
+
+  
+  // added - 10-7 cg
+
+
 
   return (
     <>
@@ -89,7 +123,7 @@ export default function Header() {
         </div>
         <div className={`nav-items ${menuOpen ? 'show' : 'hide'}`}>
           <div><Link to="/">Home</Link></div>
-          <div><a href="#link-courses">Course</a></div>
+          <div><a href='' onClick={handleCourseClick}><Link>Course</Link></a></div>
           {/* <div><a href="#link-home">Pages</a></div>
           <div><a href="#link-home">Shop</a></div> */}
           <div><Link to="/blog-_link">Blog</Link></div>
@@ -99,7 +133,7 @@ export default function Header() {
               <button className="mobile-login-button wwwwwwwwww" onClick={logout}>Logout</button>
             ) : (
               <Link to="/login_page">
-                <button className="mobile-login-button wwwwwwwwww">Login/Register</button>
+                <button className="mobile-login-button wwwwwwwwww" onClick={loginsucess}>Login/Register</button>
               </Link>
             )}
           </div>
@@ -109,10 +143,12 @@ export default function Header() {
           <div><a href=""><img src="images/icons8-cart-24.png" alt="Cart" /></a></div>*/}
           <div>
             {isAuthenticated ? (
+               <Link to="/">
               <button className="login--button" onClick={logout}>Logout</button>
+              </Link>
             ) : (
               <Link to="/login_page">
-                <button className="login--button">Login</button>
+                <button className="login--button" onClick={loginsucess}>Login</button>
               </Link>
             )}
           </div>

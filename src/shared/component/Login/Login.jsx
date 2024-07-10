@@ -92,6 +92,7 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthContext';
 import { emailValidator, passwordValidator } from '../../../components/HomePage/regexValidator';
 import '../Login/Login.css'
+// import axios from 'axios'
 
 const Login = () => {
   const { login } = useContext(AuthContext);
@@ -102,8 +103,8 @@ const Login = () => {
   const [successMessage, setSuccessMessage] = useState('');
 
   useEffect(() => {
-    if (localStorage.getItem('auth')) navigate('/allcourse_categories');
-  }, []);
+    if (localStorage.getItem('auth')) navigate('/');
+  }, [navigate]);
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
@@ -112,6 +113,12 @@ const Login = () => {
   const formSubmitter = (e) => {
     e.preventDefault();
 
+
+    // axios.get('')
+
+
+
+
     setSuccessMessage('');
     setErrorMessage('');
 
@@ -119,10 +126,11 @@ const Login = () => {
 
     if (!passwordValidator(input.password)) return setErrorMessage('Password should have at least 8 characters with uppercase, lowercase, number, and special character');
 
-    if (input.email !== 'user@gmail.com' || input.password !== 'User@123') return setErrorMessage('Invalid email or password');
+    // if (input.email !== 'user@gmail.com' || input.password !== 'User@123') return setErrorMessage('Invalid email or password');
 
     login();
-    navigate('/allcourse_categories');
+    setSuccessMessage('Login successful!');
+    setTimeout(() => navigate('/'), 1500);
   };
 
   return (

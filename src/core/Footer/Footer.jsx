@@ -2,7 +2,10 @@
 
 
 export default function Footer () {
-
+        const scrollToTop = () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              };
+            
     return(
         <>
          <div class="frame9">
@@ -69,7 +72,7 @@ export default function Footer () {
 
 
 
-<a href="#link-home">
+<a onClick={scrollToTop}>
         <div id="topup-button">
                 <img src="images/icons8-chevron-24.png" alt="scroll up button"/>
         </div>
