@@ -114,7 +114,7 @@ const Login = () => {
     e.preventDefault();
 
 
-    // axios.get('')
+    // axios.get('/')
 
 
 
