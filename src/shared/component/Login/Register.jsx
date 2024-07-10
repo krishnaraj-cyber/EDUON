@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
 
@@ -37,7 +38,7 @@ const Register = () => {
           <input type="password" id="password" name="password" class="input-field" required    value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
         </div>
         <button type="submit" class="register-button">Register</button>
-        <p class="login-link">Already have an account? <a href="/login_page">Login</a></p>
+        <p class="login-link">Already have an account? <a href=""><Link to='/login_page'>Login</Link></a></p>
       </form>
     </div>
   </div>
