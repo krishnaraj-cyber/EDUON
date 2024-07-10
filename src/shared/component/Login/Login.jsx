@@ -92,6 +92,7 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthContext';
 import { emailValidator, passwordValidator } from '../../../components/HomePage/regexValidator';
 import '../Login/Login.css'
+import { Link } from 'react-router-dom';
 // import axios from 'axios'
 
 const Login = () => {
@@ -149,7 +150,7 @@ const Login = () => {
             <input type="password" id="password" name="password" className="input-field" required onChange={handleChange} />
           </div>
           <button type="submit" className="login-button">Login</button>
-          <p className="register-link">Don't have an account? <a href="/register">Register</a></p>
+          <p className="register-link">Don't have an account? <a href=""><Link to='/register'>Register</Link></a></p>
         </form>
       </div>
     </div>
