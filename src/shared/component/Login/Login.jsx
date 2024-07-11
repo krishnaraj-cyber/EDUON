@@ -87,13 +87,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthContext';
-import { emailValidator, passwordValidator } from '../../../components/HomePage/regexValidator';
+// import { emailValidator, passwordValidator } from '../../../components/HomePage/regexValidator';
 import '../Login/Login.css'
 import { Link } from 'react-router-dom';
-// import axios from 'axios'
+import axios from 'axios'
 
 const Login = () => {
   const { login } = useContext(AuthContext);
@@ -103,36 +115,50 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
-  useEffect(() => {
-    if (localStorage.getItem('auth')) navigate('/');
-  }, [navigate]);
+  // useEffect(() => {
+  //   if (localStorage.getItem('auth')) navigate('/');
+  // }, [navigate]);
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
 
-  const formSubmitter = (e) => {
+  const formSubmitter = async (e) => {
     e.preventDefault();
 
+
+    try {
+      const response = await axios.post('http://localhost:8080/auth/apilogin', {
+        Email: input.email,
+        Password: input.password,
+      });
+
+      console.log(response.data); // Log the response from the server
+      login();
+      setSuccessMessage('Login successful!');
+      setTimeout(() => navigate('/'), 1500);
+    } catch (error) {
+      console.error('Login failed:', error);
+      setErrorMessage('Invalid credentials');
+    }
+  };
 
     // axios.get('/')
 
 
+  //   setSuccessMessage('');
+  //   setErrorMessage('');
 
+  //   if (!emailValidator(input.email)) return setErrorMessage('Please enter valid email ID');
 
-    setSuccessMessage('');
-    setErrorMessage('');
+  //   if (!passwordValidator(input.password)) return setErrorMessage('Password should have at least 8 characters with uppercase, lowercase, number, and special character');
 
-    if (!emailValidator(input.email)) return setErrorMessage('Please enter valid email ID');
+    
 
-    if (!passwordValidator(input.password)) return setErrorMessage('Password should have at least 8 characters with uppercase, lowercase, number, and special character');
-
-    // if (input.email !== 'user@gmail.com' || input.password !== 'User@123') return setErrorMessage('Invalid email or password');
-
-    login();
-    setSuccessMessage('Login successful!');
-    setTimeout(() => navigate('/'), 1500);
-  };
+  //   login();
+  //   setSuccessMessage('Login successful!');
+  //   setTimeout(() => navigate('/'), 1500);
+  // };
 
   return (
     <div className="login-container">
@@ -159,3 +185,80 @@ const Login = () => {
 
 export default Login;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Login.jsx
+
+// import React, { useContext, useState, useEffect } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
+// import { AuthContext } from '../AuthContext';
+// import axios from 'axios';
+// import '../Login/Login.css'
+
+// const Login = () => {
+//   const { login } = useContext(AuthContext);
+//   const navigate = useNavigate();
+
+//   const [input, setInput] = useState({ email: '', password: '' });
+//   const [errorMessage, setErrorMessage] = useState('');
+//   const [successMessage, setSuccessMessage] = useState('');
+
+//   useEffect(() => {
+//     if (localStorage.getItem('auth')) navigate('/');
+//   }, [navigate]);
+
+//   const handleChange = (e) => {
+//     setInput({ ...input, [e.target.name]: e.target.value });
+//   };
+
+//   const formSubmitter = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       const response = await axios.post('/auth/login', {
+//         email: input.email,
+//         password: input.password,
+//       });
+
+//       console.log(response.data); // Log the response from the server
+//       login();
+//       setSuccessMessage('Login successful!');
+//       setTimeout(() => navigate('/'), 1500);
+//     } catch (error) {
+//       console.error('Login failed:', error);
+//       setErrorMessage('Invalid credentials');
+//     }
+//   };
+
+//   return (
+//     <>
+//       {/* Login Form JSX */}
+//     </>
+//   );
+// };
+
+// export default Login;

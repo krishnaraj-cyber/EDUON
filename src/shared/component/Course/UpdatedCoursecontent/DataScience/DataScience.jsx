@@ -5,16 +5,20 @@ export const DataScience = () => {
   return (
     <>
       <div className="updated-course-banner">
+        <div>
         <p>
           <a href="">Course </a> | <a href=""> Subjects</a> 
           <details href="">
             <ul>
               <li>Computer Science</li>
             </ul>
-            <summary>Data Science</summary>
+            <summary>ReactJS</summary>
           </details>
         </p>
-        <h2 className="text-5xl pl-24 pt-10 line leading-relaxed font-semibold">Bachelor of Science (Honours) in <br/>Data Science</h2>
+        <h2 className="text-5xl pl-24 pt-10 line leading-relaxed font-semibold">ReactJS for Beginners</h2>
+        <h3>React JS Free Course: Master Front-End Development</h3>
+        <p>With the ReactJS free course for beginners, learn front-end development in an immersive way. Discover the ideas behind JavaScript toolkit and how to use it to create evolving, user-friendly user interfaces. For web developers of all expertise levels, this course is ideal for anybody who aspires to learn ReactJS.</p>
+      </div>
       </div>
       <div className="dsov4p-flex">
         <div className="dsov4p-items">
@@ -72,6 +76,56 @@ export const DataScience = () => {
         </div>
         </div>
       </article>
+
+
+
+
+
+      <section className="blg-cntainr">
+    <div>
+        
+          <h4 className="text-4xl pb-5 border-b-2 mb-10 font-medium text-center">About the Program</h4>
+            <div className="blg-lft-grid">
+
+
+            <div className="blg-lft-g-items">
+              <img class="" src="images/blog-ee1.jpg" />
+              <h3 className='underline'>Programme</h3>
+              <p className="text-center"></p>
+              <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                mollitia corporis sed iure veniam ipsam, et, quasi, hic maxime
+                odit accusantium autem necessitatibus excepturi dolorem
+                voluptatem sit inventore rerum iste.
+              </p>
+           </div>
+           <div className="blg-lft-g-items">
+              <img class="" src="images/blog-ee1.jpg" />
+              <h3 className='underline'>Student Experience</h3>
+              <p className="text-center"></p>
+              <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                mollitia corporis sed iure veniam ipsam, et, quasi, hic maxime
+                odit accusantium autem necessitatibus excepturi dolorem
+                voluptatem sit inventore rerum iste.
+              </p>
+           </div>
+           <div className="blg-lft-g-items">
+              <img class="" src="images/blog-ee1.jpg" />
+              <h3 className='underline'>Data Science</h3>
+              <p className="text-center"></p>
+              <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                mollitia corporis sed iure veniam ipsam, et, quasi, hic maxime
+                odit accusantium autem necessitatibus excepturi dolorem
+                voluptatem sit inventore rerum iste.
+              </p>
+           </div>
+
+
+          </div>
+        </div>
+    </section>
     </>
   );
 };

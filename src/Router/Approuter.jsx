@@ -13,16 +13,6 @@ import { DataScience } from "../shared/component/Course/UpdatedCoursecontent/Dat
 
 
 import { AuthProvider } from '../shared/component/AuthContext';
-// import axios from 'axios';
-
-
-
-
-// axios.defaults.baseURL = 'http://localhost:8000'
-// axios.defaults.withCredentials = true
-
-
-
 
 
 
