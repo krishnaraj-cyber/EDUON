@@ -9,18 +9,18 @@
     height: 500px;
     color: white;
 }
-.updated-course-banner>div>p{
+.updated-course-banner>div>p:first-child{
     padding: 150px 0 0 96px;
-    display: flex;
 }
 .updated-course-banner>div>p>a,
 .updated-course-banner>p>details{
     padding:0 10px;
     cursor: pointer;
 }
-.updated-course-banner>div:last-child{
-    
+.updated-course-banner>div>p:last-child{
+    padding: 30px 0 0 96px;
 }
+
 .dsov4p-flex{
     width: 66%;
     display: grid;
@@ -113,3 +113,117 @@
         margin: auto;
     }
 }
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.reat-main-cntnt{
+    width:80%;
+    margin:auto;
+}
+
+
+
+
+
+
+.reat-crse-banner{
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.reat-crse-banner-cntnt{
+    padding-top: 128px;
+    width: calc(2/3);
+    margin: auto;
+    padding-left: 180px ;
+
+}
+.reat-crse-banner a{
+    padding-right: 10px;
+}
+.reat-crse-banner a:last-of-type{
+    padding-left: 10px;
+}
+
+
+.crse-reatpg-art-comn{
+    padding: 30px 0;
+    margin: 50px 0;
+}
+
+.crse-reatpg-art-comn h3{
+    font-size: larger;
+    padding: 0px 0 20px 0;
+    color: rgb(70, 70, 70);
+    font-weight: 450;
+}
+.crse-reatpg-art-comn p{
+    color: rgb(99, 99, 99);
+}
+.reatpg-art1-pont>p{
+    padding: 10px 0;
+}
+.reatpg-detsum-sub{
+    padding:10px 0 10px 30px;
+}
+.reatpg-detsum-sub01{
+    padding:10px 0 10px 30px;
+}
+
+.reat-crse-mul-vdo{
+    background-color:#f3f4f6;
+    border-radius: 8px;
+    padding-left: 20px;
+
+}
+
+.reat-slide-vdo{
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 8px;
+    position: sticky;
+    top: 150px;
+    width: 25%;
+    left: 70%;
+    background-color: #fff;
+    z-index: 1;
+
+}
+.reat-slide-vdo button{
+    width: 70%;
+    height: 40px;
+    background-color: #ffb50765;
+    border-radius: 5px;
+    margin:20px 15%;
+    transition: .3s ease;
+}
+.reat-slide-vdo button:hover{
+    background-color: #ffb507fa;
+
+}
+.reat-slide-vdo:first-child{
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+
+@media all and (min-width:1921px){
+    .reat-main-cntnt{
+        width:1400px;
+    }
+    .reat-crse-banner-cntnt{
+        width: 1400px;
+
+    }
+}
+

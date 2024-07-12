@@ -100,13 +100,13 @@ export default function Header() {
   };
 
   
-  const handleCourseClick = () => {
-    if (isAuthenticated) {
-      navigate('/updated-course-link');
-    } else {
-      navigate('/login_page');
-    }
-  };
+  // const handleCourseClick = () => {
+  //   if (isAuthenticated) {
+  //     navigate('/updated-course-link');
+  //   } else {
+  //     navigate('/login_page');
+  //   }
+  // };
 
 
 
@@ -123,9 +123,9 @@ export default function Header() {
         </div>
         <div className={`nav-items ${menuOpen ? 'show' : 'hide'}`}>
           <div><Link to="/">Home</Link></div>
-          <div><a href='' onClick={handleCourseClick}><Link>Course</Link></a></div>
-          {/* <div><a href="#link-home">Pages</a></div>
-          <div><a href="#link-home">Shop</a></div> */}
+          <div><a href='' 
+          // onClick={handleCourseClick}
+          ><Link to='/updated-course-link'>Course</Link></a></div>
           <div><Link to="/blog-_link">Blog</Link></div>
           <div><Link to="/contactpage-link">Contact</Link></div>
           <div>

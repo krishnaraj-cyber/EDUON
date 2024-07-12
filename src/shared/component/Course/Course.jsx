@@ -5,29 +5,29 @@ import {useNavigate} from "react-router-dom"
 
 function Course() {
 
-  const navigate = useNavigate();
-  const [logout , setLogout] = React.useState(false);
+  // const navigate = useNavigate();
+  // const [logout , setLogout] = React.useState(false);
 
 
-  React.useEffect(()=> {
-    if(!localStorage.getItem('auth')) navigate('/login_page')
-  },[logout])
-
-
-
+  // React.useEffect(()=> {
+  //   if(!localStorage.getItem('auth')) navigate('/login_page')
+  // },[logout])
 
 
 
-  const logoutHandler = (e) => {
-    localStorage.removeItem("auth");
-    setLogout(true);
-  };
+
+
+
+  // const logoutHandler = (e) => {
+  //   localStorage.removeItem("auth");
+  //   setLogout(true);
+  // };
 
 
   return (
     <>
 
-    {/* <button style={{zIndex:'2',position:'fixed',top:'8%',right:'2%',height:'30px',width:'100px',backgroundColor:'#ffb607',borderRadius:'5px'}} onClick={logoutHandler}>LogOut</button> */}
+   
 
 <h1 class="Heading-toc">Categories</h1>
         <img
