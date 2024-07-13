@@ -1,12 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React , { useContext }  from "react";
+import { Link , useNavigate} from "react-router-dom";
 import "../DataScience/DataScience.css";
 import VideoComponent from "../../../VideoComponent/VideoComponent.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import RatingStar from "../../../RatingStar.jsx";
+import { AuthContext } from "../../../AuthContext.jsx";
 
 export const DataScience = () => {
+  const { isAuthenticated } = useContext(AuthContext); // Get the authentication status
+  const navigate = useNavigate();
   const videoSrc = "/videos/preview.mp4";
+
+
+  const handleStartLearning = () => {
+    if (!isAuthenticated) {
+      navigate("/login_page"); // Redirect to login page if not logged in
+    }
+  };
+
+
   return (
     <>
  
@@ -19,8 +31,20 @@ export const DataScience = () => {
           <div className="">
             <VideoComponent src={videoSrc} width={"100%"}/>
           </div>
-          <Link to="/login_page"><button> Start Learning</button></Link>
-          <div className="">
+          
+
+
+
+          {!isAuthenticated && (
+       <p><Link to ="/login_page"><button  onClick={handleStartLearning}> Start Learning</button></Link></p>
+      )}
+      {isAuthenticated && (
+       <p><button  onClick={handleStartLearning}>You can access full course</button></p>
+      )}
+
+
+
+          <div className="reat-sl-vd-last">
             <p className=" font-semibold ">This Course Includes</p>
             <div className="flex py-5">
               <img src="images/reat-time.png" width={"45px"} alt="" />
@@ -47,8 +71,8 @@ export const DataScience = () => {
 
 
     <section className="reat-crse-banner" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7)), url("images/datascience.jpg")`,}}>
-      <article className="reat-crse-banner-cntnt  ">
-        <div className="w-2/3">
+      <article className="reat-crse-banner-cntnt ">
+        <div className="">
           <p className="flex ">
             <a href="">Course </a> | <a href=""> Subjects</a>
             <details href="">
@@ -88,40 +112,41 @@ export const DataScience = () => {
 
 
 
-        <article className="crse-reatpg-art-comn w-2/3">
+        <article className="crse-reatpg-art-comn">
           <h3>Recognised Bachelor's Honours degree</h3>
-          <div className="flex gap-5">
-            <div className="reatpg-art1-pont">
-              <p className="flex gap-3">
+          {/* <div className="flex gap-3 flex-1"> */}
+          <div className="grid grid-flow-col gap-2  grid-cols-2 grid-rows-3 gap-y-4">
+            {/* <div className="reatpg-art1-pont"> */}
+              <p className="grid grid-flow-col justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 Components of ReactJS
               </p>
-              <p className="flex gap-3">
+              <p className="grid grid-flow-col  justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 ReactJS props
               </p>
-              <p className="flex gap-3">
+              <p className="grid grid-flow-col  justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 React router
               </p>
-            </div>
-            <div className="reatpg-art1-pont">
-              <p className="flex gap-3">
+            {/* </div>
+            <div className="reatpg-art1-pont"> */}
+              <p className="grid grid-flow-col  justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 ReactJS nesting components
               </p>
-              <p className="flex gap-3">
+              <p className="grid grid-flow-col  justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 React state
               </p>
-              <p className="flex gap-3">
+              <p className="grid grid-flow-col  justify-start gap-2">
                 <FaArrowRight size={"22px"} color="rgb(70,70,70)" />
                 React middleware
               </p>
             </div>
-          </div>
+          {/* </div> */}
         </article>
-        <article className="crse-reatpg-art-comn w-2/3">
+        <article className="crse-reatpg-art-comn">
           <h3>Recognised Bachelor's Honours degree</h3>
           <div className="flex flex-wrap gap-4">
             <p className="rounded-full border-2 px-5 py-1.5">UI developers</p>
@@ -141,7 +166,7 @@ export const DataScience = () => {
           </div>
         </article>
 
-        <article className="crse-reatpg-art-comn reat-crse-mul-vdo w-2/3">
+        <article className="crse-reatpg-art-comn reat-crse-mul-vdo">
           <h3>What you will learn in this free React course?</h3>
           <div className="">
             <details className="reatpg-detsum-main">
@@ -149,70 +174,116 @@ export const DataScience = () => {
                 <summary>Introduction</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>Course Introduction</summary>
-                  <VideoComponent src={videoSrc} />
+
+
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}
+      {!isAuthenticated && (
+       <p><Link to ="/login_page">Login to continue</Link></p>
+      )}
+
+
+                  
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 01:What is React?</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>What is React</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 02:ReactJS Installation on Windows</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>ReactJS Installation on Windows</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 03:React components</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>React Components</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 04:Nesting components</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>Nesting Components</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 05:React props</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>React Props</summary>
-                  <VideoComponent src={videoSrc} />
-                </details>
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}   
+         </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 06:React state</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>React State</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 07:React demo for begginers</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>React Demo for Beginners</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 08:React vs Angular vs Vue</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>React vs Angular vs Vue</summary>
-                  <VideoComponent src={videoSrc} />
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+        <p><Link to ="/login_page">Login to continue</Link></p>
+       )}
                 </details>
               </details>
               <details className="reatpg-detsum-sub">
                 <summary>Lesson 09:How to connect ReactJS with NodeJS?</summary>
                 <details className="reatpg-detsum-sub01">
                   <summary>How to connect ReactJS with NodeJS</summary>
-                  <Link to = "/login_page" className="text-blue-600">Login for more Videos</Link>
+                  {isAuthenticated && (
+       <VideoComponent src={videoSrc} />
+      )}{!isAuthenticated && (
+       <p><Link to ="/login_page">Login to continue</Link></p>
+      )}
                 </details>
               </details>
               <summary>ReactJS for beginners</summary>
@@ -220,7 +291,7 @@ export const DataScience = () => {
           </div>
         </article>
 
-        <article className="crse-reatpg-art-comn w-2/3">
+        <article className="crse-reatpg-art-comn">
           <div>
             <h3>What does the degree certificate look like?</h3>
             <p>
@@ -232,10 +303,10 @@ export const DataScience = () => {
           </div>
         </article>
 
-        <article className="crse-reatpg-art-comn  w-2/3">
+        <article className="crse-reatpg-art-comn ">
           <h3>Why you should learn React JS?</h3>
           <div className="flex flex-wrap gap-3">
-            <div className="border-2 rounded-lg border-gray-300 bg-gray-100 w-1/2 flex-1">
+            <div className="border-2 rounded-lg border-gray-300 bg-gray-100 w-1/2 flex-1 min-w-60">
               <h4 className="px-5 py-4 font-medium">
                 Most In-demand Framework
               </h4>
@@ -243,7 +314,7 @@ export const DataScience = () => {
                 Top jobs in Full Stack development demand ReactJS as a skill
               </p>
             </div>
-            <div className="border-2 rounded-lg border-gray-300 bg-gray-100 w-1/2  flex-1">
+            <div className="border-2 rounded-lg border-gray-300 bg-gray-100 w-1/2  flex-1  min-w-60">
               <h4 className="px-5 py-4 font-medium">$120K per year</h4>
               <p className="px-5 pb-5">
                 Annual median salary of a ReactJS Developer
@@ -251,7 +322,7 @@ export const DataScience = () => {
             </div>
           </div>
         </article>
-        <article className="crse-reatpg-art-comn w-2/3">
+        <article className="crse-reatpg-art-comn">
           <h3>About The Course:</h3>
           <p className="p-4 border-2 border-gray-300">
             The common JavaScript package ReactJS is used in front-end
@@ -266,9 +337,9 @@ export const DataScience = () => {
             projects by the conclusion of this course.
           </p>
         </article>
-        <article className="crse-reatpg-art-comn w-2/3 mb-5">
+        <article className="crse-reatpg-art-comn  mb-5">
           <h3>Learner Review</h3>
-          <div className="bg-gray-100 border-2 border-gray-300 w-2/3 p-7">
+          <div className="bg-gray-100 border-2 border-gray-300 p-7">
             <div className="flex gap-5 pb-5">
               <img src="images/user-icon.png" alt="" width={"70px"} />
               <div className="space-y-4">

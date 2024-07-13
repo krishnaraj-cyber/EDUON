@@ -139,7 +139,7 @@ const Login = () => {
       setTimeout(() => navigate('/'), 1500);
     } catch (error) {
       console.error('Login failed:', error);
-      setErrorMessage('Invalid credentials');
+      setErrorMessage("Invalid mail/password ,If you don't have account please register to continue");
     }
   };
 

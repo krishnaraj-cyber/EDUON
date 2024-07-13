@@ -16,7 +16,7 @@ export const UpdatedCourse = () => {
           <a href="">Course </a> | <a href=""> Subjects</a> 
           
         </p>
-        <h2 className="text-5xl pl-24 pt-10 line leading-relaxed font-semibold">Online Course by Eduon</h2>
+        <h2 className="text-5xl  pt-10 line leading-relaxed font-semibold">Online Course by Eduon</h2>
         
         <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere sapiente exercitationem rem dicta id eum deserunt ratione pariatur nostrum. Dolores expedita possimus quis nam, vel provident debitis iste sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex est minus, esse repellat optio nulla aliquam voluptate beatae nesciunt deserunt ad omnis architecto? Itaque molestiae eius blanditiis hic repudiandae.</p>
       </div>

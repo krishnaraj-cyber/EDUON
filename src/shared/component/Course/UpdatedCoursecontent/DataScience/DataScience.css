@@ -9,6 +9,9 @@
     height: 500px;
     color: white;
 }
+.updated-course-banner h2{
+    padding-left: 96px;
+}
 .updated-course-banner>div>p:first-child{
     padding: 150px 0 0 96px;
 }
@@ -31,7 +34,8 @@
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.137);
 }
 .dsov4p-items{
-    margin: 20px;
+    padding:0 20px ;
+    margin: 20px 0;
     border-right: 1px solid rgba(128, 128, 128, 0.315);
     padding-right: 20px;
 }
@@ -49,6 +53,9 @@
     width: 66%;
     margin: auto;
     padding-bottom: 50px;
+}
+.dsovpara-datails li{
+    list-style-type: disc;
 }
 .dsovpara-datails>h2{
     font-size: xxx-large;
@@ -114,7 +121,39 @@
     }
 }
 
+@media all and (max-width:1000px) {
+    .dsov4p-flex{
+        width: 90%;
+        margin:40px auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .dsov4p-items:nth-child(3){
+        border-right:none;
+    }
+    .updated-course-banner{
+        height: fit-content;
+    }
+    .updated-course-banner>div>p:last-child{
+        padding: 20px 20px 30px 20px;
+        text-align: justify;
+    }
+    .updated-course-banner>div>p:first-child{
+        padding: 150px 0 0 20px;
 
+    }
+    .updated-course-banner h2{
+        padding-left: 20px;
+    }
+    .dsovpara-datails{
+        width: 90%;
+    }
+    .dsovpara-datails>h2{
+        font-size: xx-large;
+    }
+    
+    
+}
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  React couse page  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -144,11 +183,12 @@
 }
 .reat-crse-banner-cntnt{
     padding-top: 128px;
-    width: calc(2/3);
-    margin: auto;
+    width: 60%;
     padding-left: 180px ;
 
+
 }
+
 .reat-crse-banner a{
     padding-right: 10px;
 }
@@ -160,6 +200,7 @@
 .crse-reatpg-art-comn{
     padding: 30px 0;
     margin: 50px 0;
+    width: 66.6%;
 }
 
 .crse-reatpg-art-comn h3{
@@ -227,3 +268,67 @@
     }
 }
 
+
+@media all and (max-width:1000px){
+    .reat-main-cntnt{
+        width:90%;
+    }
+    .reat-crse-banner{
+    position: relative;
+    top: -650px;
+    height: fit-content;
+    }
+    .reat-crse-banner-cntnt{
+        padding-top: 100px;
+        width: 90%;
+        margin: auto;
+        padding-left: 0 ;
+        text-align: justify;
+    
+    }
+    .reat-slide-vdo{
+        position: relative;
+        top: 550px;
+        width: 70%;
+        left: 15%;
+        z-index: 1;
+    
+    }
+    .reat-crse-banner-cntnt:last-child{
+         padding-bottom: 40px;
+    }
+    .crse-reatpg-art-comn{
+        padding: 30px 0;
+        margin: 50px 0;
+        width: 90%;
+    }
+}
+
+
+@media all and (max-width:600px){
+    .reat-main-cntnt{
+        width:90%;
+    }
+    .reat-crse-banner{
+    position: relative;
+    top: -450px;
+    height: fit-content;
+    }
+    .reat-slide-vdo{
+        position: relative;
+        top: 700px;
+        width: 80%;
+        left: 10%;
+    }
+    .reat-sl-vd-last{
+        padding-left: 10px;
+    }
+    .reat-main-cntnt{
+        margin-left: 10%;
+    }
+    .reat-crse-mul-vdo{
+        padding: 20px;
+    }
+
+
+}

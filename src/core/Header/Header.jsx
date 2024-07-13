@@ -133,7 +133,7 @@ export default function Header() {
               <button className="mobile-login-button wwwwwwwwww" onClick={logout}>Logout</button>
             ) : (
               <Link to="/login_page">
-                <button className="mobile-login-button wwwwwwwwww" onClick={loginsucess}>Login/Register</button>
+                <button className="mobile-login-button wwwwwwwwww" onClick={loginsucess}>Login</button>
               </Link>
             )}
           </div>

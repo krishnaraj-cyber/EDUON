@@ -121,10 +121,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div style={{position: 'relative' , bottom:'35px' }} class="scrollbars">
+        {/* <div style={{position: 'relative' , bottom:'35px' }} class="scrollbars">
           <div class="scroll"></div>
           <div class="scroll1"></div>
-        </div>
+        </div> */}
       </div>
 
 {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Frame 4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
@@ -319,7 +319,7 @@ export default function Home() {
               />
             </div>
 
-            <div class="buynowbutton">
+            {/* <div class="buynowbutton">
               <button href="">Buy Now</button>
             </div>
 
@@ -327,7 +327,7 @@ export default function Home() {
               <div class="scroll"></div>
               <div class="scroll1"></div>
               <div class="scroll1"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

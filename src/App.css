@@ -733,7 +733,7 @@ html {
     position: absolute;
     height: 200px;
     width: fit-content;
-    top: -50px;
+    top: -150px;
     right: 1%;
     z-index: 0;
   }
