@@ -143,6 +143,11 @@ const Login = () => {
     }
   };
 
+
+  const handleForgetPassword = () => {
+    navigate('/forget-password'); // Navigate to forget password page
+  };
+
     // axios.get('/')
 
 
@@ -174,9 +179,11 @@ const Login = () => {
           <div className="input-group">
             <label htmlFor="password" className="input-label">Password</label>
             <input type="password" id="password" name="password" className="input-field" required onChange={handleChange} />
+            {/* <p className="forget-password-link pt-3 text-amber-500  text-xs text-end" onClick={handleForgetPassword}><Link to ="/forget-password">Forgot password?</Link></p> */}
           </div>
           <button type="submit" className="login-button">Login</button>
           <p className="register-link">Don't have an account? <a href=""><Link to='/register'>Register</Link></a></p>
+         
         </form>
       </div>
     </div>

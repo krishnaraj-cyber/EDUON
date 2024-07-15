@@ -3,6 +3,8 @@ import Main from "../core/Main/Main";
 import Homepage from "../components/HomePage/Homepage";
 import ContactPage from "../components/HomePage/ContactPage";
 import LoginPage from "../components/HomePage/LoginPage";
+import ForgetPassword from "../shared/component/Login/ForgetPassword";
+import ResetPassword from "../shared/component/Login/ResetPassword";
 import CoursePage from "../components/HomePage/CoursePage";
 import TopOnlineCourse from "../shared/component/Course/TopOnlineCourse/TopOnlineCourse";
 import PopularSubjects from "../shared/component/Course/PopularSubjects/PopularSubjects";
@@ -32,6 +34,11 @@ export default function Approuter () {
          <Route path="/contactpage-link" element={<ContactPage/>}/>
          <Route path="/login_page" element={<LoginPage/>}/>
          <Route path="/register" element={<Register/>}/>
+
+         <Route path="/forget-password" element={<ForgetPassword />} />
+         <Route path="/reset-password/:token" element={<ResetPassword />} />
+
+
          <Route path="/updated-course-link" element={<UpdatedCourse/>}/>
          <Route path="/subject-datascience" element={<DataScience/>}/>
          <Route path="/allcourse_categories" element={<CoursePage/>}/>

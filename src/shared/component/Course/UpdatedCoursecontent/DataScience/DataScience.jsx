@@ -5,6 +5,8 @@ import VideoComponent from "../../../VideoComponent/VideoComponent.jsx";
 import { FaArrowRight } from "react-icons/fa";
 import RatingStar from "../../../RatingStar.jsx";
 import { AuthContext } from "../../../AuthContext.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export const DataScience = () => {
   const { isAuthenticated } = useContext(AuthContext); // Get the authentication status
@@ -70,7 +72,7 @@ export const DataScience = () => {
 
 
 
-    <section className="reat-crse-banner" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7)), url("images/datascience.jpg")`,}}>
+    <section className="reat-crse-banner" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7)), url("images/development.jpg")`,}}>
       <article className="reat-crse-banner-cntnt ">
         <div className="">
           <p className="flex ">
@@ -176,8 +178,11 @@ export const DataScience = () => {
                   <summary>Course Introduction</summary>
 
 
-                  {isAuthenticated && (
+                  {isAuthenticated && (<div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}
       {!isAuthenticated && (
        <p><Link to ="/login_page">Login to continue</Link></p>
@@ -192,7 +197,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>What is React</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -203,7 +212,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>ReactJS Installation on Windows</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -214,7 +227,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>React Components</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -225,7 +242,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>Nesting Components</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -236,7 +257,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>React Props</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}   
@@ -247,7 +272,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>React State</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -258,7 +287,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>React Demo for Beginners</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -269,7 +302,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>React vs Angular vs Vue</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
         <p><Link to ="/login_page">Login to continue</Link></p>
        )}
@@ -280,7 +317,11 @@ export const DataScience = () => {
                 <details className="reatpg-detsum-sub01">
                   <summary>How to connect ReactJS with NodeJS</summary>
                   {isAuthenticated && (
+       <div className="reat-auth-vdos-mat">
        <VideoComponent src={videoSrc} />
+       <a className="text-blue-500 font-semibold" href="/documents/ai-for-everyone.pdf" download="React_course.pdf" > Download Material <FontAwesomeIcon icon={faDownload} />{" "} </a>
+       <p className=""> <span className="font-bold">Topic 1: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.<p> <span className="font-bold">Topic 2: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 3: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 4: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p><p> <span className="font-bold">Topic 5: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores architecto soluta labore hic quod dignissimos tempora? Excepturi, animi totam adipisci explicabo dolorem beatae odit dolor eaque tempora sapiente nesciunt aliquam.</p></p>
+       </div>
       )}{!isAuthenticated && (
        <p><Link to ="/login_page">Login to continue</Link></p>
       )}
