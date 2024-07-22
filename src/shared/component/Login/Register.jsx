@@ -1,368 +1,113 @@
-// import axios from 'axios';
-// import React, { useState } from 'react';
-// import { Link , useNavigate } from 'react-router-dom';
-
-// const Register = () => {
-//   const [data, setData] = useState({
-//     name: '',
-//     email: '',
-//     password: '',
-//   });
-
-//   const navigate = useNavigate();
-
-//   const registerUser = async (e) => {
-//     e.preventDefault();
-//     try {
-//        const response = await axios.post('http://localhost:8080/auth/apiregister', {
-//         Username: data.name,
-//         Email: data.email,
-//         Password: data.password,
-//       });
-//       console.log(response.data); // Log the response from the server
-      
-//       navigate('/login_page');
-
-//     } catch (error) {
-//       console.error('Registration failed:', error);
-//       // Handle error (e.g., show error message to user)
-//     }
-//   };
-
-//   return (
-//     <>
-//       <div className="register-container">
-//         <div className="register-form">
-//           <h2 className="register-title">Register</h2>
-//           <form action="/register" method="post" onSubmit={registerUser}>
-//             <div className="input-group">
-//               <label htmlFor="username" className="input-label">
-//                 Username
-//               </label>
-//               <input
-//                 type="text"
-//                 id="username"
-//                 name="username"
-//                 className="input-field"
-//                 required
-//                 value={data.name}
-//                 onChange={(e) => setData({ ...data, name: e.target.value })}
-//               />
-//             </div>
-//             <div className="input-group">
-//               <label htmlFor="email" className="input-label">
-//                 Email
-//               </label>
-//               <input
-//                 type="email"
-//                 id="email"
-//                 name="email"
-//                 className="input-field"
-//                 required
-//                 value={data.email}
-//                 onChange={(e) => setData({ ...data, email: e.target.value })}
-//               />
-//             </div>
-//             <div className="input-group">
-//               <label htmlFor="password" className="input-label">
-//                 Password
-//               </label>
-//               <input
-//                 type="password"
-//                 id="password"
-//                 name="password"
-//                 className="input-field"
-//                 required
-//                 value={data.password}
-//                 onChange={(e) => setData({ ...data, password: e.target.value })}
-//               />
-//             </div>
-//             <button type="submit" className="register-button">
-//               Register
-//             </button>
-//             <p className="login-link">
-//               Already have an account? <Link to="/login_page">Login</Link>
-//             </p>
-//           </form>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Register;
 
 
 
 
-
-
-
-
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-// import { Link, useNavigate } from 'react-router-dom';
-
-// const Register = () => {
-//   const [data, setData] = useState({
-//     name: '',
-//     email: '',
-//     password: '',
-//   });
-//   const [showOtpInput, setShowOtpInput] = useState(false);
-//   const [otp, setOtp] = useState('');
-//   const navigate = useNavigate();
-
-//   const registerUser = async (e) => {
-//     e.preventDefault();
-//     try {
-//       const response = await axios.post('http://localhost:8080/auth/apiregister', {
-//         Username: data.name,
-//         Email: data.email,
-//         Password: data.password,
-//       });
-//       console.log(response.data); // Log the response from the server
-//       setShowOtpInput(true);
-//     } catch (error) {
-//       console.error('Registration failed:', error);
-//       // Handle error (e.g., show error message to user)
-//     }
-//   };
-
-//   const verifyOtp = async (e) => {
-//     e.preventDefault();
-//     try {
-//       const response = await axios.post('http://localhost:8080/auth/verifyOtp', {
-//         Email: data.email,
-//         otp: otp,
-//         Username: data.name,
-//         Password: data.password,
-//       });
-//       console.log(response.data); // Log the response from the server
-//       navigate('/login_page');
-//     } catch (error) {
-//       console.error('OTP verification failed:', error);
-//       // Handle error (e.g., show error message to user)
-//     }
-//   };
-
-//   return (
-//     <div className="register-container">
-//       <div className="register-form">
-//         <h2 className="register-title">Register</h2>
-//         <form onSubmit={registerUser}>
-//           <div className="input-group">
-//             <label htmlFor="username" className="input-label">
-//               Username
-//             </label>
-//             <input
-//               type="text"
-//               id="username"
-//               name="name"
-//               className="input-field"
-//               required
-//               value={data.name}
-//               onChange={(e) => setData({ ...data, name: e.target.value })}
-//             />
-//           </div>
-//           <div className="input-group">
-//             <label htmlFor="email" className="input-label">
-//               Email
-//             </label>
-//             <input
-//               type="email"
-//               id="email"
-//               name="email"
-//               className="input-field"
-//               required
-//               value={data.email}
-//               onChange={(e) => setData({ ...data, email: e.target.value })}
-//             />
-//           </div>
-//           <div className="input-group">
-//             <label htmlFor="password" className="input-label">
-//               Password
-//             </label>
-//             <input
-//               type="password"
-//               id="password"
-//               name="password"
-//               className="input-field"
-//               required
-//               value={data.password}
-//               onChange={(e) => setData({ ...data, password: e.target.value })}
-//             />
-//           </div>
-//           <button type="submit" className="register-button">
-//             Register
-//           </button>
-//           <p className="login-link">
-//             Already have an account? <Link to="/login_page">Login</Link>
-//           </p>
-//         </form>
-//         {showOtpInput && (
-//           <form onSubmit={verifyOtp}>
-//             <div className="input-group">
-//               <label htmlFor="otp" className="input-label">
-//                 OTP
-//               </label>
-//               <input
-//                 type="text"
-//                 id="otp"
-//                 name="otp"
-//                 className="input-field"
-//                 required
-//                 value={otp}
-//                 onChange={(e) => setOtp(e.target.value)}
-//               />
-//             </div>
-//             <button type="submit" className="register-button">
-//               Verify OTP
-//             </button>
-//           </form>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Register;
-
-
-
-
-
-
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
+import { API_URL } from '../utils/api';
+import './Login.css';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const Register = () => {
-  const [data, setData] = useState({
-    name: '',
-    email: '',
-    password: '',
-  });
-  const [showOtpInput, setShowOtpInput] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [otp, setOtp] = useState('');
+  const [showOtpField, setShowOtpField] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
   const navigate = useNavigate();
-
-  const registerUser = async (e) => {
-    e.preventDefault();
-    setError('');
+  const handleRegister = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/auth/apiregister', {
-        Username: data.name,
-        Email: data.email,
-        Password: data.password,
+      const response = await axios.post(`${API_URL}/api/apiregister`, {
+        Email: email,
+        Password: password,
       });
-      console.log(response.data);
-      setShowOtpInput(true);
+
+      if (response.data.message) {
+        setShowOtpField(true);
+        setSuccess(true);
+        alert('OTP sent to your email. Check your inbox.');
+      } else {
+        setError(response.data.message);
+      }
     } catch (error) {
-      console.error('Registration failed:', error);
-      setError('Registration failed. Please try again.');
+      console.error('Error during registration:', error.message);
+      setError('An error occurred during registration. Please try again.');
     }
   };
 
-  const verifyOtp = async (e) => {
-    e.preventDefault();
-    setError('');
+  const handleOtpVerification = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/auth/verifyOtp', {
-        Email: data.email,
-        otp,  // Ensure key is 'otp' to match the backend expectation
+      const otpResponse = await axios.put(`${API_URL}/api/apiverifyOTP`, {
+        Email: email,
+        OTP: otp,
       });
-      console.log(response.data);
-      navigate('/login_page');
+
+      if (otpResponse.data.message) {
+        navigate('/login_page')
+        alert('Registration successful. You can now log in.');
+        // Redirect to the login page or perform any additional actions
+      } else {
+        setError(otpResponse.data.message);
+      }
     } catch (error) {
-      console.error('OTP verification failed:', error);
-      setError('OTP verification failed. Please check the OTP and try again.');
+      console.error('Error during OTP verification:', error.message);
+      setError('An error occurred during OTP verification. Please try again.');
     }
   };
 
   return (
-    <div className="register-container">
-      <div className="register-form">
-        <h2 className="register-title">Register</h2>
-        <form onSubmit={registerUser}>
-          <div className="input-group">
-            <label htmlFor="username" className="input-label">
-              Username
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="name"
-              className="input-field"
-              required
-              value={data.name}
-              onChange={(e) => setData({ ...data, name: e.target.value })}
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="email" className="input-label">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="input-field"
-              required
-              value={data.email}
-              onChange={(e) => setData({ ...data, email: e.target.value })}
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="password" className="input-label">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              className="input-field"
-              required
-              value={data.password}
-              onChange={(e) => setData({ ...data, password: e.target.value })}
-            />
-          </div>
-          <button type="submit" className="register-button">
+    <div>
+      <div className="register-container">
+        <div className="register-form">
+          <h2 className='register-title'>Register</h2>
+          {error && <div className="error-message text-red-700">{error}</div>}
+          {success && (
+            <div className="success-message text-green-700">
+              Registration successful. Please check your email for the OTP.
+            </div>
+          )}
+          <input
+            type="email"
+            placeholder="Email"
+            className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          
+          <button className="register-button" onClick={handleRegister}>
             Register
           </button>
-          {error && <p className="error-message">{error}</p>}
           <p className="login-link">
             Already have an account? <Link to="/login_page">Login</Link>
           </p>
-        </form>
-        {showOtpInput && (
-          <form onSubmit={verifyOtp}>
-            <div className="input-group">
-              <label htmlFor="otp" className="input-label">
-                OTP
-              </label>
+          {showOtpField && (
+            <>
               <input
                 type="text"
-                id="otp"
-                name="otp"
-                className="input-field"
-                required
+            className="input-field"
+                placeholder="OTP"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
               />
-            </div>
-            <button type="submit" className="register-button">
-              Verify OTP
-            </button>
-            {error && <p className="error-message">{error}</p>}
-          </form>
-        )}
+              <button 
+             className="register-button" onClick={handleOtpVerification}>Verify OTP</button>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Register;
+
+
 

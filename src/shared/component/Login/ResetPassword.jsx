@@ -1,70 +1,64 @@
+
 import React, { useState } from 'react';
-import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';
-// import './ResetPassword.css';
+import Axios from 'axios';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const ResetPassword = () => {
-  const { token } = useParams();
-  const navigate = useNavigate();
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [message, setMessage] = useState('');
+   const [password, setPassword] = useState('');
+   const {token} = useParams()
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (password !== confirmPassword) {
-      setMessage('Passwords do not match.');
-      return;
-    }
-    try {
-      const response = await axios.post('http://localhost:8080/auth/reset-password', { token, password });
-      setMessage(response.data.message);
-      console.log(response.data.message);
-      if (response.data.success) {
-        setTimeout(() => navigate('/login_page'), 1500);
+     const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    Axios.post("http://localhost:3000/auth/reset-password/"+token, {
+      password,
+    }).then(response => {
+      if(response.data.status) {
+        
+        navigate('/login_page')
+        
       }
-    } catch (error) {
-      console.error('Error resetting password:', error);
-      setMessage('Error resetting password.');
-      console.log(error)
-    }
+      console.log(response.data)
+    }).catch(err => {
+      console.log(err)
+    })
   };
 
   return (
-    <div className="reset-password-container">
-      <div className="reset-password-form">
-        <h2 className="reset-password-title">Reset Password</h2>
+    <>
+     <div className="register-container">
+      <div className="register-form">
+        <h2 className="register-title">Reset Password</h2>
         <form onSubmit={handleSubmit}>
-          {message && <div className="message">{message}</div>}
-          <div className="input-group">
-            <label htmlFor="password" className="input-label">New Password</label>
+          
+        <div className="input-group">
+            <label htmlFor="password" className="input-label">
+              Password
+            </label>
             <input
               type="password"
               id="password"
               name="password"
               className="input-field"
               required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              // value={data.password}
+              onChange={(e) => setPassword(e.target.value )}
             />
           </div>
-          <div className="input-group">
-            <label htmlFor="confirmPassword" className="input-label">Confirm Password</label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              className="input-field"
-              required
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-          </div>
-          <button type="submit" className="submit-button">Reset Password</button>
+          
+          <button type="submit" className="register-button">
+            Send
+          </button>
+          {/* {error && <p className="error-message">{error}</p>} */}
+          <p className="login-link">
+            Already have an account? <Link to="/login_page">Login</Link>
+          </p>
         </form>
+       
       </div>
-    </div>
-  );
-};
+    </div></>
+  )
+}
 
-export default ResetPassword;
+export default ResetPassword

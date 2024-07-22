@@ -298,6 +298,10 @@
         text-align: justify;
     
     }
+    .reat-crse-banner-cntnt>div h2{
+        text-align:start;
+        word-spacing: 20px;
+    }
     .reat-slide-vdo{
         position: relative;
         top: 550px;
