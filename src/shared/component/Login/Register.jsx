@@ -9,18 +9,24 @@ import './Login.css';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
   const [password, setPassword] = useState('');
   const [otp, setOtp] = useState('');
   const [showOtpField, setShowOtpField] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+
+
   const navigate = useNavigate();
   const handleRegister = async () => {
     try {
       const response = await axios.post(`${API_URL}/api/apiregister`, {
         Email: email,
         Password: password,
+        Username: username,
+        MobileNumber: mobileNumber,
       });
 
       if (response.data.message) {
@@ -68,12 +74,26 @@ const Register = () => {
             </div>
           )}
           <input
+  type="text"
+  placeholder="Username"
+  className="input-field"
+  value={username}
+  onChange={(e) => setUsername(e.target.value)}
+/>
+          <input
             type="email"
             placeholder="Email"
             className="input-field"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <input
+  type="tel"
+  placeholder="Mobile Number"
+  className="input-field"
+  value={mobileNumber}
+  onChange={(e) => setMobileNumber(e.target.value)}
+/>
           <input
             type="password"
             placeholder="Password"

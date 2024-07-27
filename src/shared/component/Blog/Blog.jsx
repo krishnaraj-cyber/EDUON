@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../Blog/Blog.css";
 
 const Blog = () => {
@@ -10,7 +10,7 @@ const Blog = () => {
 
           <div className="blg-lft-grid">
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-ee1.jpg" />
+              <img className="" src="images/blog-ee1.jpg" />
               <h3>National reading recovery & literacy conference</h3>
               <p className="text-center pt-4">Oct 01 2020</p>
               <p>
@@ -22,7 +22,7 @@ const Blog = () => {
               <button>Read more</button>
             </div>
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-ee2.jpg" />
+              <img className="" src="images/blog-ee2.jpg" />
               <h3>Futute of higher education: an invitation to lead</h3>
               <p className="text-center pt-4">Sep 14 2020</p>
               <p>
@@ -34,7 +34,7 @@ const Blog = () => {
               <button>Read more</button>
             </div>
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-ee3.jpg" />
+              <img className="" src="images/blog-ee3.jpg" />
               <h3>Comprehensive literacy and reading recovery conference</h3>
               <p className="text-center pt-4">Aug 13 2020</p>
               <p>
@@ -54,7 +54,7 @@ const Blog = () => {
 
           <div className="blg-lft-grid">
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-re1.jpg" />
+              <img className="" src="images/blog-re1.jpg" />
               <h3>Career Advice - Leading the way with lifelong learning</h3>
               <p className="text-center pt-4">Jun 13 2020</p>
               <p>
@@ -66,7 +66,7 @@ const Blog = () => {
               <button>Read more</button>
             </div>
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-re2.jpg" />
+              <img className="" src="images/blog-re2.jpg" />
               <h3>
                 Market Trends - All aspire students are now student card
                 eligible
@@ -81,7 +81,7 @@ const Blog = () => {
               <button>Read more</button>
             </div>
             <div className="blg-lft-g-items">
-              <img class="" src="images/blog-re3.jpg" />
+              <img className="" src="images/blog-re3.jpg" />
               <h3>
                 Research - Determining the true goal of a good Education is
                 difficult

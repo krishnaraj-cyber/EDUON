@@ -177,77 +177,54 @@
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Forget page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Forget page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-
-  .forget-password-container {
+  .forgot-password-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    background-color: #f5f5f5;
   }
   
-  .forget-password-form {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .forget-password-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  .forgot-password-title {
+    margin-bottom: 1.5rem;
+    color: #333;
   }
   
   .input-field {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
+    width: 300px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
+  .request-otp-button,
+  .verify-otp-button {
+    width: 300px;
+    padding: 0.75rem;
+    background-color: #007bff;
     color: #fff;
-    background-color: #ffb507;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s;
   }
   
-  .submit-button:hover {
-    background-color: #ffb607 ;
+  .request-otp-button:hover,
+  .verify-otp-button:hover {
+    background-color: #0056b3;
   }
   
-  .message {
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 3px;
+  .error-message {
+    color: red;
+    margin-bottom: 1rem;
   }
   
-  @media (max-width: 480px) {
-    .forget-password-form {
-      width: 90%;
-    }
+  .success-message {
+    color: green;
+    margin-bottom: 1rem;
   }
-  
-
 
   
   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Forget page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

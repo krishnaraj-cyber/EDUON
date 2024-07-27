@@ -7,7 +7,6 @@ import axios from 'axios';
 import { API_URL } from '../utils/api';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
-
 import { AuthContext } from '../AuthContext';
 
 const Login = () => {
@@ -55,6 +54,9 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+         <p className="text-left mb-4 -mt-3 login-link ">
+         <Link to="/forgot-password">Forgot Password ?</Link>
+        </p>
         <button className="register-button" onClick={handleLogin}>Login</button>
         <p className="login-link">
           Don't have an account? <Link to="/register">Register</Link>

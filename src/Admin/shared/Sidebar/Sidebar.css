@@ -1,0 +1,98 @@
+/* Admail.jsx style here */
+.sidebar-fr-all{
+margin-left: 320px;
+}
+
+@media all and (max-width:768px){
+  .sidebar-fr-all{
+    margin-left: 50px;
+    }
+    
+}
+
+
+/*  sidebar styles here */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 50px;
+  }
+  .dash-adprofile{
+    text-align: center;
+  }
+  .dash-adprofile>img{
+    margin: auto;
+  }
+  .dash-adprofile>p{
+    font-size: larger;
+    line-height: 40px;
+  }
+
+  .sidebar h3 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: x-large;
+    color: #5f6368;
+    font-weight: 600;
+    letter-spacing:1px;
+    text-decoration: 2px #5f6368 underline;
+    text-underline-offset: 5px;
+  }
+  .dash-slide-links p{
+    padding: 10px;
+    border-top: 1px solid #ffffff69;
+    padding-left:25px;
+    width: 100%;
+    transition: .2s ease-out;
+  }
+  .dash-slide-links a p:hover{
+    background-color: #5f6368;
+    color: white;
+  }
+  .dash-slide-links:last-child{
+    border-bottom:1px solid #ffffff69; 
+  }
+  .sidebar-mobl{
+    display: none;
+  }
+
+
+  @media all and (max-width:768px) {
+    .sidebar{
+      display: none;
+    }
+    .sidebar-mobl{
+    width:50px;
+    height: 100vh;
+    background-color: #b3b3b369;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 75px;
+    display: block;
+    }
+    .side-dash-mobl-icon{
+      margin: 100px auto 0 auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+    .side-dash-mobl-icon a:first-child{
+      justify-self: center;
+      background-color: #5f6368;
+      padding: 5px;
+      margin: 0 auto 30px auto;
+
+    }
+    .side-dash-mobl-icon>a{
+      margin: auto;
+    }
+    
+  }
+ 
+
+  
+  
+ 
